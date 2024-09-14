@@ -55,7 +55,7 @@ function exportCurrentPage() {
                 return {
                   x: (t.area.x + t.area.w / 2) / size.width,
                   y: (t.area.y + t.area.h / 2) / size.height,
-                  contents: t.translation,
+                  contents: t.translation.replace(/\n/g, "\r"),
                   group: "Group"
                 }
               })
